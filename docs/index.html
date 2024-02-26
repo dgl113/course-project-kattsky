@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link to Google Font Montserrat and Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;600;700;900&family=Open+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link to Font Awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- DGL 103 CVS1 - Katrina Corporal - Project -->
+
+    <title>Beaufort Association | For Inclusion In Action</title>
+  </head>
+  <body>
+    <!-- Navigational Bar -->
+    <header>
+      <div class="nav-img">
+        <a href="index.html">
+          <img
+            src="images/beaufortassociationlogo.jpg"
+            alt="Beaufort Association logo"
+          />
+        </a>
+      </div>
+
+      <nav class="navbar">
+        <!-- Below .toggle is from https://codepen.io/AskClaireGuiot/apen/BaMydwd?editors=1100 
+                JS function showNav is found at the bottom of the <body> -->
+        <div class="toggle-wrapper">
+          <a class="toggle" onclick="showNav()">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <div id="nav-links" class="navlinks">
+          <a href="index.html" class="current-page">Home</a>
+          <a href="https://beaufortassociation.ca/about-us/">About</a>
+          <a href="getsupport.html">Get Support</a>
+          <a href="getinvolved.html">Get Involved</a>
+          <a href="https://beaufortassociation.ca/self-advocacy/">More</a>
+          <a href="getinvolved.html#donate">Donate</a>
+          <i class="fa fa-heart" aria-hidden="true"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero section -->
+      <section class="hero">
+        <h1>
+          Welcome to <br />
+          Beaufort Association For Inclusion In Action
+        </h1>
+        <div class="view-overlay"></div>
+        <!-- for mobile view -->
+        <img
+          class="mobile-hero-img"
+          src="images/empower.jpg"
+          alt="Beaufort Association in action"
+        />
+        <!-- for desktop view -->
+        <img
+          class="desktop-hero-img"
+          src="images/inclusioninaction.jpg"
+          alt="Beaufort Association in action"
+        />
+        
+      </section>
+      <!-- About section -->
+      <section class="about">
+        <h2>Enable diverse abilities for meaningful, inclusive lives.</h2>
+        <a href="https://beaufortassociation.ca/about-us/">Support our Cause</a>
+      </section>
+      <!-- Programs section -->
+      <section class="programs">
+        <h2>Share opportunities in the many venues of community life.</h2>
+        <a href="https://beaufortassociation.ca/515-2/"
+          >Discover Your Interest</a
+        >
+        <p>&#9660;</p>
+        <div class="cards-wrapper">
+          <div class="card">
+            <img
+              src="images/questprogram.jpeg"
+              alt="a woman wearing a flower necklace and flower headdress"
+            />
+            <a href="https://beaufortassociation.ca/quest-2/"
+              >Quest and Options</a
+            >
+          </div>
+
+          <div class="card">
+            <img src="images/litterbuster.jpg" alt="men cleaning the street" />
+            <a href="https://beaufortassociation.ca/litterbusters-services/"
+              >LitterBusters Services</a
+            >
+          </div>
+
+          <div class="card">
+            <img
+              src="images/salmonhatchery.jpg"
+              alt="pond surrounded by trees"
+            />
+            <a href="https://beaufortassociation.ca/quest/"
+              >Salmon Enhancement</a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- Get Involved section -->
+      <section class="get-involved">
+        <div class="get-involved-heading">
+          <img
+            src="images/teamwork.jpg"
+            alt="a team of four wearing team shirt"
+          />
+          <h2>Together, We Make a Difference</h2>
+        </div>
+
+        <div class="support-beaufort">
+          <div class="get-involved-card">
+            <p>
+              Support initiatives: inclusivity, accessibility, and education.
+            </p>
+            <div class="get-involved-cta">
+              <a href="getinvolved.html#donate">Give Back Now</a>
+              <i class="fa fa-heart" aria-hidden="true"></i>
+            </div>
+          </div>
+
+          <div class="get-involved-card">
+            <p>Be an active participant in our upcoming events.</p>
+            <div class="get-involved-cta">
+              <a href="https://beaufortassociation.ca/events-2/">Take Part</a>
+              <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+            </div>
+          </div>
+
+          <div class="get-involved-card">
+            <p>Join us in creating meaningful change by volunteering.</p>
+            <div class="get-involved-cta">
+              <a href="getinvolved.html#volunteer">Inspire through Service</a>
+              <i class="fa fa-handshake-o" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Subscribe to newsletter section -->
+      <section class="newsletter">
+        <h2>Stay Connected</h2>
+        <h3>Subscribe to Beaufort Updates</h3>
+
+        <!-- Below is from Codepen by Claire Guiot -->
+        <form
+          method="post"
+          action="https://learndigital.dev/DGL103/dgl103-form.php"
+        >
+          <label for="fname">First Name</label>
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="Ex: Mary"
+          />
+
+          <label for="email"
+            >Email <span class="label-required">* (required)</span></label
+          >
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Ex: mary@gmail.com"
+            required
+          />
+          <input type="submit" value="Submit" />
+        </form>
+        <p class="privacy-note">
+          Your privacy matters: we ensure your email stays secure.
+        </p>
+      </section>
+    </main>
+    <!-- Footer section -->
+    <footer>
+      <div class="footer-columns-wrapper">
+        <div class="footer-about-column">
+          <h4>About Us</h4>
+          <nav>
+            <a href="index.html">Home</a>
+            <a href="https://beaufortassociation.ca/about-us/">About</a>
+            <a href="getsupport.html">Get Support</a>
+            <a href="getinvolved.html">Get Involved</a>
+            <a href="https://beaufortassociation.ca/self-advocacy/">More</a>
+          </nav>
+        </div>
+
+        <div class="footer-contacts-column">
+          <address>
+            <p>Contact Us</p>
+            <a href="mailto:info@beaufortassociation.ca"
+              >info@beaufortassociation.ca</a
+            ><br />
+            (250) 334-3532<br />
+            495 6th St Courtenay, BC, V9N 6V4
+          </address>
+        </div>
+      </div>
+
+      <div class="socialmedia-icons">
+        <h4>Connect and Share the Journey</h4>
+        <a href="https://www.facebook.com/beaufortassociation"
+          ><i class="fa fa-facebook" aria-hidden="true"></i
+        ></a>
+        <a href="https://twitter.com/"
+          ><i class="fa fa-twitter" aria-hidden="true"></i
+        ></a>
+        <a href="https://www.instagram.com/"
+          ><i class="fa fa-instagram" aria-hidden="true"></i
+        ></a>
+      </div>
+
+      <img
+        src="images/beaufortassociationbanner.jpg"
+        alt="Beaufort Association logo"
+      />
+
+      <!-- Copyright section in footer -->
+      <div class="copyright">
+        <p>&copy; 2023 Beaufort Association For Inclusion In Action.</p>
+        <p>All rights reserved.</p>
+      </div>
+
+      <p class="disclaimer">
+        This is a fictional website that was designed and coded as an
+        educational exercise. It is not intended to be seen outside of the class
+        environment. None of the content and images were approved by the
+        business owner.
+      </p>
+    </footer>
+
+    <!-- Below JS is modified from https://codepen.io/AskClaireGuiot/pen/BaMydwd?editors=1100 -->
+    <script>
+      function showNav() {
+        var navLinks = document.getElementById("nav-links");
+        navLinks.classList.toggle("show-links");
+      }
+    </script>
+  </body>
+</html>

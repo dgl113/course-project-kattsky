@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Link to Google Font Montserrat and Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;600;700;900&family=Open+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link to Font Awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- DGL 103 CVS1 - Katrina Corporal - Project -->
+
+    <title>Get Involved | Beaufort Association</title>
+  </head>
+  <body>
+    <!-- Navigational Bar -->
+    <header>
+      <div class="nav-img">
+        <a href="index.html">
+          <img
+            src="images/beaufortassociationlogo.jpg"
+            alt="Beaufort Association logo"
+          />
+        </a>
+      </div>
+
+      <nav class="navbar">
+        <!-- Below .toggle is from https://codepen.io/AskClaireGuiot/apen/BaMydwd?editors=1100 
+                  JS function showNav is found at the bottom of the <body> -->
+        <div class="toggle-wrapper">
+          <a class="toggle" onclick="showNav()">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <div id="nav-links" class="navlinks">
+          <a href="index.html">Home</a>
+          <a href="https://beaufortassociation.ca/about-us/">About</a>
+          <a href="getsupport.html">Get Support</a>
+          <a href="getinvolved.html" class="current-page">Get Involved</a>
+          <a href="https://beaufortassociation.ca/self-advocacy/">More</a>
+          <a href="getinvolved.html#donate">Donate</a>
+          <i class="fa fa-heart" aria-hidden="true"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero section -->
+      <section class="involvepage-hero">
+        <h1>Empowerment Hub</h1>
+
+        <img
+          class="involvepage-hero-img"
+          src="images/get_involved.jpg"
+          alt="Selective Focus of Red Heart Shape"
+        />
+      </section>
+
+      <section class="self-advocacy">
+        <h2>Empower Yourself</h2>
+        <p>Be aware of your rights as a citizen</p>
+        <p>&#9660;</p>
+
+        <div class="beaufort-cards-wrapper">
+          <div class="beaufort-cards">
+            <img src="images/inclusion_bc_logo.png" alt="Inclusion BC logo" />
+            <a href="https://inclusionbc.org/our-services/advocacy/"
+              >Inclusion BC</a
+            >
+          </div>
+
+          <div class="beaufort-cards">
+            <img src="images/saln_logo.png" alt="SALN logo" />
+            <a href="https://salnbc.com/">SALN</a>
+          </div>
+
+          <div class="beaufort-cards">
+            <img
+              src="images/self_advocate_logo.png"
+              alt="Self Advocate Net logo"
+            />
+            <a href="https://selfadvocatenet.com/what-is-self-advocacy/"
+              >What is Self Advocacy?</a
+            >
+          </div>
+
+          <div class="beaufort-cards">
+            <img
+              src="images/bc_peoplefirst_logo.png"
+              alt="BC People First logo"
+            />
+            <a href="https://bcpeoplefirst.wordpress.com/"
+              >BC People First - Blog</a
+            >
+          </div>
+
+          <div class="beaufort-cards">
+            <img
+              src="images/bc_peoplefirst_logo.png"
+              alt="BC People First logo"
+            />
+            <a href="https://www.facebook.com/bcpeoplefirst/"
+              >BC People First - Facebook</a
+            >
+          </div>
+
+          <div class="beaufort-cards">
+            <img
+              src="images/semi_house_society.png"
+              alt="Semi House Society logo"
+            />
+            <a href="https://www.semi-house-society.com/">Semi House Society</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="volunteering">
+        <h2 id="volunteer">Inspire through Service</h2>
+        <blockquote>
+          &quot;I'm proud to volunteer for an organization that prioritizes
+          inclusivity and empowers adults with disabilities to actively engage
+          in community life. The stories of personal growth and the smiles on
+          their faces make every moment spent volunteering truly
+          worthwhile.&quot;
+          <footer>- Ann Jones</footer>
+        </blockquote>
+
+        <img
+          src="images/volunteer_adults_with_disabilities.jpg"
+          alt="Woman holding a mic for someone speaking"
+        />
+        <p>
+          Bring a smile to their faces. Join our team of volunteers using the
+          form below.
+        </p>
+        <div>
+          <form
+            method="post"
+            action="https://learndigital.dev/DGL103/dgl103-form.php"
+          >
+            <label for="fname"
+              >First Name<span class="label-required">* (required)</span></label
+            >
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Ex: Mary"
+              required
+            />
+
+            <label for="lname"
+              >Last Name<span class="label-required">* (required)</span></label
+            >
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Ex: Jones"
+              required
+            />
+
+            <label for="email"
+              >Email <span class="label-required">* (required)</span></label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Ex: mary@gmail.com"
+              required
+            />
+
+            <fieldset>
+              <legend>Availability</legend>
+              <input type="radio" id="wday" name="available" value="Weekdays" />
+              <label for="wday">Weekdays</label><br />
+              <input type="radio" id="wend" name="available" value="Weekends" />
+              <label for="wend">Weekends</label><br />
+              <input type="radio" id="any" name="available" value="Any day" />
+              <label for="any">Any day</label>
+            </fieldset>
+
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </section>
+
+      <section class="donate">
+        <h2 id="donate">Give Back to Beaufort Association</h2>
+        <p>
+          Your donation will contribute to maintaining and improving our
+          facilities, enhancing our daily operations, and ultimately helping us
+          serve our community better. No amount is too small, and every
+          contribution counts. Together, we can make a positive impact on the
+          lives of people with diverse abilities in the Comox Valley.
+        </p>
+
+        <div class="donate-card">
+          <p>Donate</p>
+          <div class="donate-options">
+            <a
+              href="https://www.paypal.com/donate/?hosted_button_id=CJDSQEXG247BW"
+              >Paypal</a
+            >
+            <a href="https://www.canadahelps.org/en/dn/37881?v2=true"
+              >Canada Helps</a
+            >
+          </div>
+        </div>
+
+        <p class="thank-you-note">
+          Thank you for considering making a donation to the Beaufort
+          Association for Inclusion in Action! Your support will help us
+          continue our mission of providing much-needed services to our
+          community.
+        </p>
+      </section>
+    </main>
+    <!-- Footer section -->
+    <footer>
+      <div class="footer-columns-wrapper">
+        <div class="footer-about-column">
+          <h4>About Us</h4>
+          <nav>
+            <a href="index.html">Home</a>
+            <a href="https://beaufortassociation.ca/about-us/">About</a>
+            <a href="getsupport.html">Get Support</a>
+            <a href="getinvolved.html">Get Involved</a>
+            <a href="https://beaufortassociation.ca/self-advocacy/">More</a>
+          </nav>
+        </div>
+
+        <div class="footer-contacts-column">
+          <address>
+            <p>Contact Us</p>
+            <a href="mailto:info@beaufortassociation.ca"
+              >info@beaufortassociation.ca</a
+            ><br />
+            (250) 334-3532<br />
+            495 6th St Courtenay, BC, V9N 6V4
+          </address>
+        </div>
+      </div>
+
+      <div class="socialmedia-icons">
+        <h4>Connect and Share the Journey</h4>
+        <a href="https://www.facebook.com/beaufortassociation"
+          ><i class="fa fa-facebook" aria-hidden="true"></i
+        ></a>
+        <a href="https://twitter.com/"
+          ><i class="fa fa-twitter" aria-hidden="true"></i
+        ></a>
+        <a href="https://www.instagram.com/"
+          ><i class="fa fa-instagram" aria-hidden="true"></i
+        ></a>
+      </div>
+
+      <img
+        src="images/beaufortassociationbanner.jpg"
+        alt="Beaufort Association logo"
+      />
+
+      <!-- Copyright section in footer -->
+      <div class="copyright">
+        <p>&copy; 2023 Beaufort Association For Inclusion In Action.</p>
+        <p>All rights reserved.</p>
+      </div>
+
+      <p class="disclaimer">
+        This is a fictional website that was designed and coded as an
+        educational exercise. It is not intended to be seen outside of the class
+        environment. None of the content and images were approved by the
+        business owner.
+      </p>
+    </footer>
+    <!-- Below JS is modified from https://codepen.io/AskClaireGuiot/pen/BaMydwd?editors=1100 -->
+    <script>
+      function showNav() {
+        var navLinks = document.getElementById("nav-links");
+        navLinks.classList.toggle("show-links");
+      }
+    </script>
+  </body>
+</html>
