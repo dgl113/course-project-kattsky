@@ -13,18 +13,22 @@ The website chosen for the project is [Beaufort Association](https://nic-dgl103-
 Below details the live Beaufort Association For Inclusion In Action website and its specific target audience. 
 
 URL: https://beaufortassociation.ca/
+
+Redesign project hosted on GitHub Page: https://nic-dgl103-f23-cvs3.github.io/project-kattsky/
+
 Location: Courtenay, BC
+
 Target Audience: 30-35 adults with developmental challenges
 
-**Problem Statement**
+## Problem Statement
 
 The current website [Beaufort Association](https://nic-dgl103-f23-cvs3.github.io/project-kattsky/) lacks interactive features to engage users effectively. It fails to provide seamless access to event details and input testimonials directly on the page. It also needs to provide accessibility features to individuals with visual challenges. Another thing it needs is an FAQ page to provide guidance to first time users of the website who are using it to join an event, to volunteer, and to donate. 
 
-**Value Statement**
+## Value Statement
 
 Implementing below suggested features outlined in scope of work will greatly enhance the website's functionality and user experience. 
 
-**Scope of Work**
+## Scope of Work
 
 The following outlines the functionality of the future website which will be achieved using JavaScript.
 1. Modal Windows - for displaying event details. This will be helpful in providing a better user experience without navigating away from the main page.
