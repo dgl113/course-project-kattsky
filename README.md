@@ -5,3 +5,33 @@
 1. Write your project proposal directly in this file in the section below. At a minimum, you should describe what a website you are going to work on and the 3 features that you plan to implement. See the project description on Brightspace for more details.
 1. <b>This part of the project is due Mon. Feb. 26 at 11:59pm.</b>
 ## Project Proposal
+
+## Project Overview
+
+The website chosen for the project is [Beaufort Association](https://nic-dgl103-f23-cvs3.github.io/project-kattsky/). This was a redesign project to fulfill the course requirement for DGL103 HTML/CSS. 
+
+Below details the live Beaufort Association For Inclusion In Action website and its specific target audience. 
+
+URL: https://beaufortassociation.ca/
+Location: Courtenay, BC
+Target Audience: 30-35 adults with developmental challenges
+
+**Problem Statement**
+
+The current website [Beaufort Association](https://nic-dgl103-f23-cvs3.github.io/project-kattsky/) lacks interactive features to engage users effectively. It fails to provide seamless access to event details and input testimonials directly on the page. It also needs to provide accessibility features to individuals with visual challenges. Another thing it needs is an FAQ page to provide guidance to first time users of the website who are using it to join an event, to volunteer, and to donate. 
+
+**Value Statement**
+
+Implementing below suggested features outlined in scope of work will greatly enhance the website's functionality and user experience. 
+
+**Scope of Work**
+
+The following outlines the functionality of the future website which will be achieved using JavaScript.
+1. Modal Windows - for displaying event details. This will be helpful in providing a better user experience without navigating away from the main page.
+2.	Carousel for Testimonials - to showcase testimonials and provide users easy navigation through them.
+3.	Customer Review Form – allows users to input their reviews directly on the page. JavaScript can help with word limit in their review and asks the client to enter their name, email address, and feedback.
+4.	FAQ toggle feature – to reveal and hide answers to specific questions with a click or tap.
+5.	Font Size Control – Uses buttons (or a slider) to dynamically adjust the font size on the website to cater individuals with visual challenges.
+6.	Scroll to Feature – to scroll to a particular section on the page when user clicks on the link.
+
+
