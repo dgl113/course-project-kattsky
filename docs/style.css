@@ -89,6 +89,13 @@ header {
   z-index: 3;
 }
 
+
+/* Hides font controls in mobile */
+.font-size-controls {
+  display: none;
+}
+
+
 /* HERO SECTION */
 .hero {
   display: flex;
@@ -1025,6 +1032,24 @@ donate-options a:hover {
     font-size: 1.6rem;
     color: red;
     margin-left: -40px;
+  }
+
+  /* Font Size Control Feature */
+
+  /*  Styling for font control buttons */
+  .font-control-button {
+    line-height: 2rem;
+    margin: .4rem;
+    border: solid 1px #fff;
+    color: white;
+    background-color: #19a86a;
+    border-radius: 10px;
+  }
+
+  .font-size-controls {    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   /* HERO SECTION */
