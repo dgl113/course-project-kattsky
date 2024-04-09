@@ -328,6 +328,8 @@ vertical alignment, specific spacing, and padding */
   padding: 45px;
   z-index: 2;
   user-select: none;
+  height: 460px; /* Set a fixed height for the testimonials container */
+  overflow-y: auto; /* Enable vertical scrolling if the content exceeds the container height */
 }
 /* Style for circular avatar */
 .testimonials__avatar {
@@ -1139,7 +1141,10 @@ with modifications done on colors and border-radius and removing the top .1rem s
 
 
   /* TESTIMONIALS SECTION */
-
+  /* Set a fixed height for the testimonials container */
+  .testimonials__content {
+    height: 350px; 
+  }
   /* Style for the quotation mark using position absolute */
 .testimonials__quote {
   font-size: 6rem;
