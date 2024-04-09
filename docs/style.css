@@ -551,7 +551,7 @@ Position right arrow wrapper absolute within its testimonial wrapper
   right: 20px; /* Distance from the right of the viewport */
   background-color: #fff; 
   color: #0056b3;
-  border: none;
+  border: 1px solid #0056b3; /* Add border to the button on mobile for visibility */
   border-radius: 50%;
   width: 40px; 
   height: 40px; 
@@ -1253,6 +1253,11 @@ Position right arrow wrapper absolute within its testimonial wrapper
     margin-left: 13rem;
   }
 
+  /* Scroll to Top Feature */
+
+  .scroll-up {
+    border: none; /* Remove border from the button on desktop */
+  }
   /* FOOTER SECTION */
 
   footer {
