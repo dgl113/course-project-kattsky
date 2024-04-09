@@ -290,6 +290,143 @@ with modifications done on colors and border-radius, remove 1rem vertical drop o
   color: #19a86a;
 }
 
+
+/* TESTIMONIALS SECTION */
+/* Style with white background, centered content, 
+vertical alignment, specific spacing, and padding */
+.testimonials {
+  background-color: #fff;
+  max-width: 1170px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  row-gap: 20px;
+  margin-top: -2px;
+  padding-top: 50px;
+  padding-bottom: 70px;
+  position: relative;
+}
+
+/* Position the testimonials wrapper relative to main */
+.testimonials__wrapper {
+  position: relative;
+}
+/* Center align the content */
+/* Styles from https://codepen.io/ecemgo/pen/WNappPz with modification to suit my layout */
+.testimonials__content {
+  text-align: center;
+  width: 85%;
+  margin: 0 auto;
+  color: #4d4352;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(4.5px);
+  border-radius: 10px;
+  padding: 45px;
+  z-index: 2;
+  user-select: none;
+}
+/* Style for circular avatar */
+.testimonials__avatar {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 3.5rem;
+  object-fit: cover; /* Maintain aspect ratio and covers the container without stretching */
+}
+/* Style for the quotation mark using position absolute */
+.testimonials__quote {
+  font-size: 6rem;
+  position: absolute;
+  top: 8rem;
+  left: 20rem;
+}
+/* Limit width for mobile to give space for the quote*/
+.testimonials__text {
+  max-width: 60ch;
+  margin: 0 auto;
+}
+/* 
+Position left arrow wrapper absolute within its testimonial wrapper
+*/
+.testimonials__left-arrow-wrap {
+  position: absolute;
+  top: 50%; 
+  left: 40px;
+}
+/* 
+Position right arrow wrapper absolute within its testimonial wrapper
+*/
+.testimonials__right-arrow-wrap {
+  position: absolute;
+  right: 40px;
+  top: 50%;
+}
+/* Consolidate styles of both left and right arrows */
+.testimonials__left-arrow,
+.testimonials__right-arrow {
+  width: calc(1.4rem + 0.6vmin); /* Set arrows width using a calculated value */
+  height: calc(1.4rem + 0.6vmin); /* Set arrows height using a calculated value */
+  border: solid #19a86a;
+  border-width: 0 calc(0.5rem + 0.2vmin) calc(0.5rem + 0.2vmin) 0;
+  cursor: pointer;
+  transform: rotate(135deg); /* Rotate the arrows clockwise by 135 degrees */
+  transition: transform 0.3s; 
+}
+.testimonials__left-arrow {
+  left: -15%;
+}
+/* Additional styling for the right arrow */
+.testimonials__right-arrow {
+  transform: rotate(-45deg); /* Rotate the right arrow counterclockwise by 45 degrees */
+}
+
+/* CSS code for carousel styling */
+/* Set the width of the testimonials wrapper to 100%  within section container */
+.testimonials__wrapper {
+  width: 100%; 
+  overflow: hidden; /* Hide any content that exceeds its width */
+}
+
+/* Hide all slides by default */
+.testimonials__content-slide {
+  display: none; 
+}
+
+/* Show only the active slide */
+.testimonials__content-slide--active {
+  display: block; 
+}
+
+/* Styles for pagination */
+
+.page-indicator {
+  width: 30%; /* Set the width of the page-indicator container to 30% of testimonials__wrapper */
+  display: flex; /* Use flexbox layout to easily manipulate spacing */
+  gap: .5rem; /* Set the gap between page dots */
+  margin: 0 auto; /* Center the page dots */
+  padding-top: 2rem;
+}
+/* Styles from https://codepen.io/ecemgo/pen/WNappPz with modification to suit my layout */
+.testimonials__page {
+  display: inline-block; /* Display the page dots as inline blocks */
+  height: 15px; 
+  width: 15px; 
+  margin: 4px; /* Set margin around the page dots */
+  border-radius: 15px; /* to create rounded page indicators or page dots */
+  background-color: #19a86a; /* Set the color of page dots */
+  cursor: pointer; /* Set cursor to pointer to indicate clickable */
+  transition: all 0.5s ease-in-out; /* Apply transition effect for smooth changes */
+}
+
+/* Highlight the active page indicator */
+.testimonials__page--active {
+  width: 30px; /* Increase the width of the active page indicator */
+}
+
 /* NEWSLETTER SECTION */
 .newsletter {
   background-color: #fff;
@@ -999,6 +1136,38 @@ with modifications done on colors and border-radius and removing the top .1rem s
     margin-left: 580px;
     padding-bottom: 7rem;
   }
+
+
+  /* TESTIMONIALS SECTION */
+
+  /* Style for the quotation mark using position absolute */
+.testimonials__quote {
+  font-size: 6rem;
+  position: absolute;
+  top: 8rem;
+  left: 20rem;
+}
+/* 
+Position left arrow wrapper absolute within its testimonial wrapper
+*/
+.testimonials__left-arrow-wrap {
+  position: absolute;
+  top: 40%; 
+  left: 46px;
+}
+/* 
+Position right arrow wrapper absolute within its testimonial wrapper
+*/
+.testimonials__right-arrow-wrap {
+  position: absolute;
+  right: 46px;
+  top: 40%;
+}
+/* Set the width of the page-indicator container to 15% of testimonials__wrapper */
+.page-indicator {
+  width: 10%;
+}
+
 
   /* NEWSLETTER SECTION */
   .newsletter {
