@@ -22,7 +22,7 @@ Target Audience: 30-35 adults with developmental challenges
 
 ## Problem Statement
 
-The current website [Beaufort Association](https://nic-dgl103-f23-cvs3.github.io/project-kattsky/) lacks interactive features to engage users effectively. It fails to provide seamless access to event details and input testimonials directly on the page. It also needs to provide accessibility features to individuals with visual challenges. Another thing it needs is an FAQ page to provide guidance to first time users of the website who are using it to join an event, to volunteer, and to donate. 
+The current website [Beaufort Association](https://nic-dgl103-f23-cvs3.github.io/project-kattsky/) lacks interactive features that encourage engagement from users. It doesn't yet provide any quick navigation to return to the top of the page. It also needs to provide accessibility features to individuals with visual challenges. Another thing it needs is the Testimonials section to showcase testimonials or stories from beneficiaries, volunteers, or donors to show potential supporters that Beaufort Association's contributions make a difference.
 
 ## Value Statement
 
