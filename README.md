@@ -31,11 +31,9 @@ Implementing below suggested features outlined in scope of work will greatly enh
 ## Scope of Work
 
 The following outlines the functionality of the future website which will be achieved using JavaScript.
-1. Modal Windows - for displaying event details. This will be helpful in providing a better user experience without navigating away from the main page.
-2.	Carousel for Testimonials - to showcase testimonials and provide users easy navigation through them.
-3.	Customer Review Form – allows users to input their reviews directly on the page. JavaScript can help with word limit in their review and asks the client to enter their name, email address, and feedback.
-4.	FAQ toggle feature – to reveal and hide answers to specific questions with a click or tap.
-5.	Font Size Control – Uses buttons (or a slider) to dynamically adjust the font size on the website to cater individuals with visual challenges.
-6.	Scroll to Feature – to scroll to a particular section on the page when user clicks on the link.
+1.	Carousel and pagination for Testimonials - to showcase testimonials and provide users easy navigation through them.
+2.	Font Size Control – Uses buttons to dynamically adjust the font size on the website to cater individuals with visual challenges.
+3.	Scroll to Top Button – to provide a convenient access to the beginning of the page, which ensures effortless navigation to top without manually scrolling.
+
 
 
