@@ -150,3 +150,42 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+// Scroll Up Feature
+
+// Listens for when the HTML finishes loading
+document.addEventListener("DOMContentLoaded", function () {
+  // Retrieves the button element with the ID scroll-up
+  // This button is used to scroll the user back to the top of the page
+  var buttonUp = document.getElementById("scroll-up");
+
+  // Function to toggle the visibility of the scroll-up button
+  function toggleButtonUp() {
+    // If the user has scrolled more than 20 pixels down the page, the button is displayed
+    // Otherwise, the button is hidden
+    if (document.documentElement.scrollTop > 20) {
+      buttonUp.style.display = "block";
+    } else {
+      buttonUp.style.display = "none";
+    }
+  }
+
+  // Adds an event listener for the scroll event
+  // When the user scrolls, the toggleButtonUp function is called
+  // to determine whether the button should be displayed or hidden
+  // based on the user's scroll position
+  // This ensures that the button is displayed when the user scrolls down the page  20 pixels
+  window.addEventListener("scroll", toggleButtonUp);
+  // Adds an event listener for the click event
+  buttonUp.addEventListener("click", function() {
+    // When the button is clicked, the page is scrolled to the top
+    // The scroll behavior is set to smooth to create a smooth scrolling effect
+    // This ensures that the user is taken back to the top of the page
+    document.documentElement.scrollTo({
+      // The top of the page is scrolled to with a smooth behavior
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+});
+
+
