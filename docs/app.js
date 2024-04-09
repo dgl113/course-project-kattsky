@@ -1,3 +1,5 @@
+'use strict';
+
 // Carousel and Pagination applied to Testimonials Section
 
 document.addEventListener("DOMContentLoaded", function() {
