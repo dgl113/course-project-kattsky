@@ -541,6 +541,36 @@ Position right arrow wrapper absolute within its testimonial wrapper
   padding-bottom: 5rem;
 }
 
+
+/* Scroll Up Feature */
+
+.scroll-up {
+  display: none; /* Hide the button by default */
+  position: fixed; /* Position the button fixed on the viewport */
+  bottom: 20px; /* Distance from the bottom of the viewport */
+  right: 20px; /* Distance from the right of the viewport */
+  background-color: #fff; 
+  color: #0056b3;
+  border: none;
+  border-radius: 50%;
+  width: 40px; 
+  height: 40px; 
+  cursor: pointer; 
+}
+
+.scroll-up i {
+  /* Center the arrow icon vertically and horizontally */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.scroll-up:hover {
+  background-color: #008000; /* Button background color on hover */
+  color: #fff;
+}
+
 /* FOOTER SECTION */
 footer {
   margin-top: -2rem;
